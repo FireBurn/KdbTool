@@ -1,0 +1,4 @@
+#!/bin/bash
+# Launcher for kdbtool — a pure-Java CMS key-database tool (no native libraries required).
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec java -jar "$here/kdbtool.jar" "$@"
