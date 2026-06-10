@@ -1,0 +1,40 @@
+# Build output
+/build/
+/target/
+*.class
+
+# Packaged artifact (rebuilt from source via the Build steps in README)
+/kdbtool.jar
+
+# Key material & generated test data — never commit secrets or sample databases
+*.kdb
+*.sth
+*.rdb
+*.p12
+*.pfx
+*.crl
+*.csr
+*.arm
+*.key
+*.pem
+
+# Exception: committed compatibility-test fixtures (fictional identities, password "password")
+!src/test/resources/testdata/*.kdb
+!src/test/resources/testdata/*.sth
+
+# IDE / editor
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+*.swp
+*~
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
